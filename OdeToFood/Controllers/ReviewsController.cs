@@ -9,18 +9,17 @@ namespace OdeToFood.Controllers
 {
     public class ReviewsController : Controller
     {
-        [ChildActionOnly]
-        public ActionResult BestReview()
-        {
-            var bestReview = _reviews.OrderByDescending(r => r.Rating);
+        //[ChildActionOnly]
+        //public ActionResult BestReview()
+        //{
+        //    var bestReview = _reviews.OrderByDescending(r => r.Rating);
 
-            return PartialView("_Review", bestReview.First());
-        }
+        //    return PartialView("_Review", bestReview.First());
+        //}
 
         public ActionResult Index()
         {
-            var model = _reviews.OrderBy(review => review.Country);
-            return View(model);
+            return View();
         }
 
         public ActionResult Details(int id)
@@ -40,25 +39,25 @@ namespace OdeToFood.Controllers
             }
         }
 
-        public ActionResult Edit(int id)
-        {
-            var review = _reviews.Single(r => r.Id == id);
+        //public ActionResult Edit(int id)
+        //{
+        //    var review = _reviews.Single(r => r.Id == id);
 
-            return View(review);
-        }
+        //    return View(review);
+        //}
 
-        [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
-        {
-            var review = _reviews.Single(r => r.Id == id);
+        //[HttpPost]
+        //public ActionResult Edit(int id, FormCollection collection)
+        //{
+        //    var review = _reviews.Single(r => r.Id == id);
 
-            if (TryUpdateModel(review))
-            {
-                // .. make changes in DB ..
-                return RedirectToAction("Index");
-            }
-            return View(review);
-        }
+        //    if (TryUpdateModel(review))
+        //    {
+        //        // .. make changes in DB ..
+        //        return RedirectToAction("Index");
+        //    }
+        //    return View(review);
+        //}
 
         public ActionResult Delete(int id, FormCollection collection)
         {
@@ -72,6 +71,7 @@ namespace OdeToFood.Controllers
             }
         }
 
+        /*
         #region SeedData
         static List<RestaurantReview> _reviews = new List<RestaurantReview>(){
             new RestaurantReview{
@@ -95,5 +95,6 @@ namespace OdeToFood.Controllers
                 Country = "Belgium",
                 Rating = 10}};
         #endregion
+        */
     }
 }

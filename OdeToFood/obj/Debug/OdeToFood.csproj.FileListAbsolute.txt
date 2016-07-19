@@ -67,3 +67,6 @@ C:\Users\Ash\Desktop\pluralsight\scott allen\ASP.NET MVC 4\OdeToFood\bin\Microso
 C:\Users\Ash\Desktop\pluralsight\scott allen\ASP.NET MVC 4\OdeToFood\obj\Debug\OdeToFood.csprojResolveAssemblyReference.cache
 C:\Users\Ash\Desktop\pluralsight\scott allen\ASP.NET MVC 4\OdeToFood\obj\Debug\OdeToFood.dll
 C:\Users\Ash\Desktop\pluralsight\scott allen\ASP.NET MVC 4\OdeToFood\obj\Debug\OdeToFood.pdb
+C:\Users\Ash\Desktop\pluralsight\scott allen\ASP.NET MVC 4\OdeToFood\obj\Debug\OdeToFood.Migrations.Initial.resources
+C:\Users\Ash\Desktop\pluralsight\scott allen\ASP.NET MVC 4\OdeToFood\obj\Debug\OdeToFood.csproj.GenerateResource.Cache
+C:\Users\Ash\Desktop\pluralsight\scott allen\ASP.NET MVC 4\OdeToFood\obj\Debug\OdeToFood.Migrations.Added_ReviewerName.resources

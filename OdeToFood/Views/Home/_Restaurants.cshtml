@@ -1,0 +1,32 @@
+﻿@model IPagedList<RestaurantListViewModel>
+
+<div id="restaurantList">
+
+    @*<div class="pagedList" data-otf-target="#restaurantList">
+        @Html.PagedListPager(
+            Model,
+            page => Url.Action("Index", new { page }),
+            PagedListRenderOptions.MinimalWithItemCountText)
+    </div>*@
+
+    <div class="pagedList" data-otf-target="restaurantList">
+            @Html.PagedListPager(Model, page => Url.Action("Index", new { page }),
+                  PagedListRenderOptions.EnableUnobtrusiveAjaxReplacing(
+                        PagedListRenderOptions.MinimalWithItemCountText,
+                        new AjaxOptions()
+                        {
+                            HttpMethod = "GET",
+                            UpdateTargetId = "restaurantList"
+                        }))
+    </div>
+
+    @foreach (var restaurant in Model)
+    {
+        <div>
+            <h4>@restaurant.Name</h4>
+            <div>@restaurant.City, @restaurant.Country</div>
+            <div>Reviews: @restaurant.CountOfReviews</div>
+            <hr />
+        </div>
+    }
+</div>

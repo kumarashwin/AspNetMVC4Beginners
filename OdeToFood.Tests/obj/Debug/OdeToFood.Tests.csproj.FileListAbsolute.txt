@@ -53,3 +53,5 @@ C:\Users\Ash\Desktop\pluralsight\scott allen\ASP.NET MVC 4\OdeToFood.Tests\bin\D
 C:\Users\Ash\Desktop\pluralsight\scott allen\ASP.NET MVC 4\OdeToFood.Tests\obj\Debug\OdeToFood.Tests.csprojResolveAssemblyReference.cache
 C:\Users\Ash\Desktop\pluralsight\scott allen\ASP.NET MVC 4\OdeToFood.Tests\obj\Debug\OdeToFood.Tests.dll
 C:\Users\Ash\Desktop\pluralsight\scott allen\ASP.NET MVC 4\OdeToFood.Tests\obj\Debug\OdeToFood.Tests.pdb
+C:\Users\Ash\Desktop\pluralsight\scott allen\ASP.NET MVC 4\OdeToFood.Tests\bin\Debug\PagedList.dll
+C:\Users\Ash\Desktop\pluralsight\scott allen\ASP.NET MVC 4\OdeToFood.Tests\bin\Debug\PagedList.xml

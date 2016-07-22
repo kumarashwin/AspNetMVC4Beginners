@@ -71,3 +71,7 @@ C:\Users\Ash\Desktop\pluralsight\scott allen\ASP.NET MVC 4\OdeToFood\obj\Debug\O
 C:\Users\Ash\Desktop\pluralsight\scott allen\ASP.NET MVC 4\OdeToFood\obj\Debug\OdeToFood.csproj.GenerateResource.Cache
 C:\Users\Ash\Desktop\pluralsight\scott allen\ASP.NET MVC 4\OdeToFood\obj\Debug\OdeToFood.Migrations.Added_ReviewerName.resources
 C:\Users\Ash\Desktop\pluralsight\scott allen\ASP.NET MVC 4\OdeToFood\obj\Debug\OdeToFood.Migrations.Added_Data_Annotations_RestaurantReviews.resources
+C:\Users\Ash\Desktop\pluralsight\scott allen\ASP.NET MVC 4\OdeToFood\bin\PagedList.dll
+C:\Users\Ash\Desktop\pluralsight\scott allen\ASP.NET MVC 4\OdeToFood\bin\PagedList.Mvc.dll
+C:\Users\Ash\Desktop\pluralsight\scott allen\ASP.NET MVC 4\OdeToFood\bin\PagedList.xml
+C:\Users\Ash\Desktop\pluralsight\scott allen\ASP.NET MVC 4\OdeToFood\bin\PagedList.Mvc.xml

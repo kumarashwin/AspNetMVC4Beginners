@@ -29,14 +29,23 @@ namespace OdeToFood.Migrations
                     }
                 });
 
-            context.Reviews.AddOrUpdate(review => review.RestaurantId,
-            new RestaurantReview
+            //context.Reviews.AddOrUpdate(review => review.RestaurantId,
+            //new RestaurantReview
+            //{
+            //    Rating = 9,
+            //    Body = "Great food!",
+            //    ReviewerName = "Scott",
+            //    RestaurantId = context.Restaurants.Single(restaurant => restaurant.Name == "Smaka").Id
+            //});
+
+            for (int i = 0; i < 1000; i++)
             {
-                Rating = 9,
-                Body = "Great food!",
-                ReviewerName = "Scott",
-                RestaurantId = context.Restaurants.Single(restaurant => restaurant.Name == "Smaka").Id
-            });
+                context.Restaurants.AddOrUpdate(r => r.Name,
+                    new Restaurant {
+                        Name = i.ToString(),
+                        City = "Nowhere",
+                        Country = "USA"});
+            }
         }
     }
 }

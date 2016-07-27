@@ -126,6 +126,14 @@
       <Private>True</Private>
       <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="WebMatrix.Data, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.Data.3.2.3\lib\net45\WebMatrix.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebMatrix.WebData, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.WebData.3.2.3\lib\net45\WebMatrix.WebData.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json">
@@ -178,6 +186,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\SecretController.cs" />
     <Compile Include="Controllers\CuisineController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -187,6 +196,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="IdentityMigrations\201607221739151_InitialCreate.cs" />
+    <Compile Include="IdentityMigrations\201607221739151_InitialCreate.Designer.cs">
+      <DependentUpon>201607221739151_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IdentityMigrations\201607271508225_AddedFavoriteRestaurant.cs" />
+    <Compile Include="IdentityMigrations\201607271508225_AddedFavoriteRestaurant.Designer.cs">
+      <DependentUpon>201607271508225_AddedFavoriteRestaurant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IdentityMigrations\Configuration.cs" />
     <Compile Include="Migrations\201607191417310_Initial.cs" />
     <Compile Include="Migrations\201607191417310_Initial.Designer.cs">
       <DependentUpon>201607191417310_Initial.cs</DependentUpon>
@@ -329,6 +347,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Content\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -338,8 +357,15 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="IdentityMigrations\201607221739151_InitialCreate.resx">
+      <DependentUpon>201607221739151_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IdentityMigrations\201607271508225_AddedFavoriteRestaurant.resx">
+      <DependentUpon>201607271508225_AddedFavoriteRestaurant.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201607191417310_Initial.resx">
       <DependentUpon>201607191417310_Initial.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201607191700432_Added_ReviewerName.resx">
       <DependentUpon>201607191700432_Added_ReviewerName.cs</DependentUpon>

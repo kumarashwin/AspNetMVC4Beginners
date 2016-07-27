@@ -12,7 +12,7 @@ namespace OdeToFood.Controllers
 {
     public class RestaurantController : Controller
     {
-        private OdeToFoodDB db = new OdeToFoodDB();
+        private OdeToFoodDB db = OdeToFoodDB.Create();
 
         // GET: Restaurant
         public ActionResult Index()

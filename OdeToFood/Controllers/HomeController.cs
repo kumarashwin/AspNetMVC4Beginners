@@ -6,16 +6,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.UI;
 
 namespace OdeToFood.Controllers
 {
     public class HomeController : Controller
     {
-        OdeToFoodDB _db = new OdeToFoodDB();
+        IOdeToFoodDB _db;
+
+        public HomeController()
+        {
+            this._db = new OdeToFoodDB();
+        }
+
+        public HomeController(IOdeToFoodDB db)
+        {
+            this._db = db;
+        }
 
         public ActionResult Autocomplete(string term)
         {
-            var model = _db.Restaurants
+            var model = _db.Query<Restaurant>()
                 .Where(restaurant => restaurant.Name.StartsWith(term))
                 .Take(10)
                 .Select(r => new { label = r.Name });
@@ -23,9 +34,10 @@ namespace OdeToFood.Controllers
             return Json(model, JsonRequestBehavior.AllowGet);
         }
 
+        [OutputCache(Duration = 60, VaryByHeader = "X-Requested-With", Location = OutputCacheLocation.Server)]
         public ActionResult Index(string searchTerm = null, int page = 1)
         {
-            var model = _db.Restaurants
+            var model = _db.Query<Restaurant>()
                 .OrderByDescending(r => r.Reviews.Average(review => review.Rating))
                 .Where(r => searchTerm == null || r.Name.StartsWith(searchTerm))
                 .Select( r => new RestaurantListViewModel {

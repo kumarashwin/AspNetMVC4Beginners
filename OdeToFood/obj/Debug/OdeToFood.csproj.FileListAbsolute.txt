@@ -75,3 +75,9 @@ C:\Users\Ash\Desktop\pluralsight\scott allen\ASP.NET MVC 4\OdeToFood\bin\PagedLi
 C:\Users\Ash\Desktop\pluralsight\scott allen\ASP.NET MVC 4\OdeToFood\bin\PagedList.Mvc.dll
 C:\Users\Ash\Desktop\pluralsight\scott allen\ASP.NET MVC 4\OdeToFood\bin\PagedList.xml
 C:\Users\Ash\Desktop\pluralsight\scott allen\ASP.NET MVC 4\OdeToFood\bin\PagedList.Mvc.xml
+C:\Users\Ash\Desktop\pluralsight\scott allen\ASP.NET MVC 4\OdeToFood\bin\WebMatrix.Data.dll
+C:\Users\Ash\Desktop\pluralsight\scott allen\ASP.NET MVC 4\OdeToFood\bin\WebMatrix.WebData.dll
+C:\Users\Ash\Desktop\pluralsight\scott allen\ASP.NET MVC 4\OdeToFood\bin\WebMatrix.Data.xml
+C:\Users\Ash\Desktop\pluralsight\scott allen\ASP.NET MVC 4\OdeToFood\bin\WebMatrix.WebData.xml
+C:\Users\Ash\Desktop\pluralsight\scott allen\ASP.NET MVC 4\OdeToFood\obj\Debug\OdeToFood.IdentityMigrations.InitialCreate.resources
+C:\Users\Ash\Desktop\pluralsight\scott allen\ASP.NET MVC 4\OdeToFood\obj\Debug\OdeToFood.IdentityMigrations.AddedFavoriteRestaurant.resources

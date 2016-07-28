@@ -95,6 +95,7 @@
     <Compile Include="Controllers\FakeContext.cs" />
     <Compile Include="Controllers\FakeOdeToFoodDB.cs" />
     <Compile Include="Controllers\TestData.cs" />
+    <Compile Include="Controllers\RestaurantControllerTests.cs" />
     <Compile Include="Features\IRatingAlgorithm.cs" />
     <Compile Include="Features\RatingResult.cs" />
     <Compile Include="Features\RestaurantRater.cs" />
@@ -102,7 +103,7 @@
     <Compile Include="Features\TestExtensions.cs" />
     <Compile Include="Features\UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Controllers\HomeControllerTest.cs" />
+    <Compile Include="Controllers\HomeControllerTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />

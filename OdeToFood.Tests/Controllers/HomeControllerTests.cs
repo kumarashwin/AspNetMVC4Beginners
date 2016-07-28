@@ -12,7 +12,7 @@ using OdeToFood.ViewModels;
 namespace OdeToFood.Tests.Controllers
 {
     [TestClass]
-    public class HomeControllerTest
+    public class HomeControllerTests
     {
         [TestMethod]
         public void Index()

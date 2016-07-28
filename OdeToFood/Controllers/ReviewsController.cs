@@ -10,7 +10,7 @@ namespace OdeToFood.Controllers
 {
     public class ReviewsController : Controller
     {
-        OdeToFoodDB _db = OdeToFoodDB.Create();
+        OdeToFoodDB _db = new OdeToFoodDB();
 
         public ActionResult Index([Bind(Prefix = "id")] int restaurantId)
         {
